@@ -12,7 +12,7 @@ export default function Page({
   return (
     <div
       className={`flex flex-col gap-3 lg:min-h-0 lg:flex-1 ${
-        scroll ? "lg:overflow-y-auto lg:pr-1" : "lg:overflow-hidden"
+        scroll ? "motion-safe:scroll-smooth lg:overflow-y-auto lg:pr-1" : "lg:overflow-hidden"
       }`}
     >
       {children}

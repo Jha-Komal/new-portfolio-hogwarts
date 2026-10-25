@@ -1,16 +1,13 @@
-import type { Metadata } from "next";
 import Link from "next/link";
-import Page from "@/components/Page";
 import PageHeader from "@/components/PageHeader";
 import ProjectThumb from "@/components/ProjectThumb";
+import Section from "@/components/Section";
 import Tag from "@/components/Tag";
 import projects from "@/data/projects.json";
 
-export const metadata: Metadata = { title: "Projects" };
-
-export default function ProjectsPage() {
+export default function ProjectsSection() {
   return (
-    <Page scroll>
+    <Section id="projects">
       <PageHeader
         command="ls ./projects"
         title="Projects"
@@ -45,6 +42,6 @@ export default function ProjectsPage() {
           </li>
         ))}
       </ul>
-    </Page>
+    </Section>
   );
 }

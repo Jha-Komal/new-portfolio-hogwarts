@@ -11,19 +11,34 @@
     "linkedin": "https://www.linkedin.com/in/komal-kumari-065440234/"
   },
   "greeting": "Welcome, fellow traveller! 👋",
-  "headline": ["Product Manager.", "Builder."],
+  "headline": [
+    "Product Manager.",
+    "Builder."
+  ],
   "headlineAccent": "Always Curious.",
   "intro": "I turn customer insights into measurable product outcomes with a mix of strategy, research and code -- inspired by a bit of magic and a lot of superheroes.",
-  "quote": {
-    "text": ["“Different worlds.", "Same curiosity.”"],
-    "author": "Komal"
-  },
   "about": {
     "blurb": "A Product Manager who starts where problems actually live: customer conversations, funnels and the small frictions people stopped noticing.",
     "facts": [
-      { "label": "Based in:", "value": "Bengaluru, India" },
-      { "label": "Experience:", "value": "3.5+ years" },
-      { "label": "Interests:", "value": "Product · Design · Code\nHarry Potter · Marvel · Travel" }
+      {
+        "label": "Based in:",
+        "value": "Bengaluru, India"
+      },
+      {
+        "label": "Experience:",
+        "value": "3.5+ years"
+      },
+      {
+        "label": "Interests:",
+        "value": "Product · Design · Code\nHarry Potter · Marvel · Travel"
+      }
     ]
-  }
+  },
+  "quotes": [
+    "Different worlds. Same curiosity.",
+    "Start with the problem, not the feature.",
+    "Scope is a decision.",
+    "Measure what matters.",
+    "Build to learn."
+  ]
 }

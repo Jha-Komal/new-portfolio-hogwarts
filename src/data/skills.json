@@ -1,64 +1,113 @@
 {
   "highlights": [
-    { "label": "Product Thinking", "icon": ">_", "tone": "green" },
-    { "label": "User Research", "icon": "◍", "tone": "sky" },
-    { "label": "0→1 Building", "icon": "</>", "tone": "sky" },
-    { "label": "Always Curious", "icon": "💡", "tone": "amber" },
-    { "label": "SQL", "icon": "DB", "tone": "sky" },
-    { "label": "Mixpanel", "icon": "📈", "tone": "green" },
-    { "label": "Jira", "icon": "J", "tone": "sky" },
-    { "label": "Notion", "icon": "N", "tone": "muted" },
-    { "label": "Figma", "icon": "❖", "tone": "figma" },
-    { "label": "More...", "icon": "+", "tone": "muted" }
+    {
+      "label": "Product Strategy",
+      "icon": ">_",
+      "tone": "green"
+    },
+    {
+      "label": "Customer Discovery",
+      "icon": "◍",
+      "tone": "sky"
+    },
+    {
+      "label": "PRDs & Roadmaps",
+      "icon": "</>",
+      "tone": "sky"
+    },
+    {
+      "label": "GTM",
+      "icon": "🚀",
+      "tone": "amber"
+    },
+    {
+      "label": "SQL",
+      "icon": "DB",
+      "tone": "sky"
+    },
+    {
+      "label": "Mixpanel",
+      "icon": "📈",
+      "tone": "green"
+    },
+    {
+      "label": "Jira",
+      "icon": "J",
+      "tone": "sky"
+    },
+    {
+      "label": "Funnel Analysis",
+      "icon": "▽",
+      "tone": "amber"
+    },
+    {
+      "label": "Figma",
+      "icon": "❖",
+      "tone": "figma"
+    },
+    {
+      "label": "More...",
+      "icon": "+",
+      "tone": "muted"
+    }
   ],
   "groups": [
     {
       "category": "Product",
       "items": [
-        "Roadmap & Vision",
-        "PRD & User Story Writing",
-        "Backlog Prioritization",
-        "Product Lifecycle",
-        "0→1 Development",
-        "MVP Prioritization",
-        "User Research",
-        "Agile/Scrum",
-        "Sprint Planning"
+        "Product strategy",
+        "Customer discovery",
+        "Prioritization",
+        "PRDs",
+        "User stories",
+        "Roadmaps",
+        "Functional specs",
+        "Acceptance criteria",
+        "Stakeholder management",
+        "UAT",
+        "GTM"
       ]
     },
     {
-      "category": "Analytics",
+      "category": "Agile & Delivery",
       "items": [
-        "Funnel & Cohort Analysis",
-        "Customer Journey Mapping",
-        "KPI Tracking",
-        "Hypothesis Testing",
-        "Market & Competitor Analysis"
+        "Cross-functional execution",
+        "Agile/Scrum",
+        "Jira",
+        "Release planning",
+        "Rollout"
+      ]
+    },
+    {
+      "category": "Data & Analytics",
+      "items": [
+        "SQL",
+        "Mixpanel",
+        "Google Analytics",
+        "Funnel analysis",
+        "Experiment design",
+        "KPIs",
+        "Excel/Sheets"
+      ]
+    },
+    {
+      "category": "Fintech & Finance",
+      "items": [
+        "Payments",
+        "Credit pre-qualification",
+        "Collections",
+        "Lender workflows",
+        "GST/TDS invoicing"
       ]
     },
     {
       "category": "Tools",
       "items": [
-        "Jira",
-        "Confluence",
         "Figma",
         "Balsamiq",
-        "Google Analytics",
-        "Mixpanel",
-        "Zoho CRM",
-        "LeadSquared",
-        "SQL",
-        "Excel",
-        "Notion"
-      ]
-    },
-    {
-      "category": "Soft Skills",
-      "items": [
-        "Cross-functional Collaboration",
-        "Stakeholder Management",
-        "People Management",
-        "Structured Problem-Solving"
+        "OpenAI API",
+        "Claude Code",
+        "Codex"
       ]
     }
   ]

@@ -1,15 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
-import Page from "@/components/Page";
 import PageHeader from "@/components/PageHeader";
+import Section from "@/components/Section";
 import Tag from "@/components/Tag";
 import blog from "@/data/blog.json";
 
-export const metadata: Metadata = { title: blog.title };
-
-export default function BlogPage() {
+export default function BlogSection() {
   return (
-    <Page scroll>
+    <Section id="blog">
       <PageHeader command="ls ./blog" title={blog.title} subtitle={blog.subtitle} />
       <ul className="space-y-3">
         {blog.posts.map((post) => (
@@ -34,6 +31,6 @@ export default function BlogPage() {
           </li>
         ))}
       </ul>
-    </Page>
+    </Section>
   );
 }

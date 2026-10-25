@@ -5,6 +5,7 @@ type Props = {
   index: string;
   prefix?: string;
   className?: string;
+  id?: string;
   children: ReactNode;
 };
 
@@ -13,10 +14,12 @@ export default function Panel({
   index,
   prefix = "//",
   className = "",
+  id,
   children,
 }: Props) {
   return (
     <section
+      id={id}
       className={`relative rounded-lg border border-line bg-panel p-4 ${className}`}
     >
       <span className="absolute left-0 top-0 h-0.5 w-8 bg-green" aria-hidden />

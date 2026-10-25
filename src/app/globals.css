@@ -354,3 +354,81 @@ body {
     width: var(--w);
   }
 }
+
+/* Life page: Harry crosses the middle of the page forever; Iron Man hovers in place */
+@keyframes fly-across {
+  from {
+    transform: translateX(-140%) rotate(-6deg);
+  }
+  to {
+    transform: translateX(calc(100cqw + 40%)) rotate(-6deg);
+  }
+}
+
+@keyframes fly-bob {
+  50% {
+    margin-top: 14px;
+  }
+}
+
+.fly-harry {
+  left: 0;
+  animation:
+    fly-across 14s linear infinite,
+    fly-bob 2s ease-in-out infinite;
+}
+
+@keyframes hover-bob {
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes hover-shadow {
+  50% {
+    transform: scaleX(0.7);
+    opacity: 0.5;
+  }
+}
+
+.hover-ironman {
+  animation: hover-bob 2.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(255, 170, 60, 0.55));
+}
+
+.hover-shadow {
+  animation: hover-shadow 2.6s ease-in-out infinite;
+}
+
+/* embers dropping from the thrusters */
+@keyframes ember-fall {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(22px);
+    opacity: 0;
+  }
+}
+
+.ember {
+  animation: ember-fall 2.1s ease-in infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fly-harry {
+    animation: none;
+    left: 40%;
+  }
+
+  .hover-ironman,
+  .hover-shadow,
+  .ember {
+    animation: none;
+  }
+
+  .ember {
+    opacity: 0.6;
+  }
+}

@@ -32,7 +32,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
         command={`cat ${project.slug}.md`}
         title={project.title}
         subtitle={project.subtitle}
-        back={{ href: "/projects", label: "all projects" }}
+        back={{ href: "/#projects", label: "all projects" }}
       />
 
       <div className="grid gap-3 lg:grid-cols-[1.4fr_1fr]">

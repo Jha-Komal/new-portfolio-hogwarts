@@ -1,11 +1,13 @@
 import Link from "next/link";
 import navigation from "@/data/navigation.json";
 import profile from "@/data/profile.json";
+import MusicPlayer from "./MusicPlayer";
+import QuoteRotator from "./QuoteRotator";
 import PixelScene from "./PixelScene";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[36rem] flex-1 overflow-hidden rounded-lg border border-line bg-panel text-foreground">
+    <section className="relative flex min-h-[36rem] shrink-0 overflow-hidden lg:min-h-[calc(100dvh-90px)] rounded-lg border border-line bg-panel text-foreground">
       {/* size container so the 16:9 scene can be sized from the panel (cqw/cqh).
           mobile: cover the panel. desktop: at least 72% of the width, anchored right/bottom. */}
       <div className="absolute inset-0 overflow-hidden [container-type:size]">
@@ -14,6 +16,7 @@ export default function Hero() {
             lg:left-auto lg:right-0 lg:h-[max(100cqh,40.5cqw)] lg:w-[max(177.78cqh,72cqw)] lg:top-[calc((100cqh-max(100cqh,40.5cqw))*0.75)]"
         />
       </div>
+      <MusicPlayer />
       {/* fade the art into the panel behind the text */}
       <div className="absolute inset-0 bg-gradient-to-t from-panel via-panel/70 to-panel/40 lg:bg-gradient-to-r lg:from-panel lg:from-[27%] lg:via-panel/75 lg:via-[40%] lg:to-transparent lg:to-[54%]" />
 
@@ -56,21 +59,7 @@ export default function Hero() {
           ))}
         </ul>
 
-        <figure className="float absolute right-8 top-8 hidden rounded-xl border border-dashed border-sky/60 bg-panel/80 px-6 py-4 text-base backdrop-blur-sm md:flex md:items-center md:gap-4 lg:text-lg">
-          <blockquote>
-            {profile.quote.text.map((line, i) => (
-              <span key={i} className="block">
-                {line}
-              </span>
-            ))}
-            <figcaption className="mt-1 text-right text-sm text-muted">
-              - {profile.quote.author}
-            </figcaption>
-          </blockquote>
-          <span className="text-3xl text-amber" aria-hidden>
-            ⚡
-          </span>
-        </figure>
+        <QuoteRotator quotes={profile.quotes} author={profile.name} />
       </div>
     </section>
   );

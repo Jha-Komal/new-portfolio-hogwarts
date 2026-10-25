@@ -26,7 +26,7 @@ export default async function PostPage(props: PageProps<"/blog/[slug]">) {
         command={`cat ${post.slug}.md`}
         title={post.title}
         subtitle={`${post.date} · ${post.readingTime}`}
-        back={{ href: "/blog", label: "all posts" }}
+        back={{ href: "/#blog", label: "all posts" }}
       />
       <article className="rounded-lg border border-line bg-panel p-6 sm:p-10">
         <div className="max-w-2xl space-y-4 text-sm leading-relaxed text-foreground/85">
