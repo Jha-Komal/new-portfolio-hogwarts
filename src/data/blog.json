@@ -1,0 +1,41 @@
+{
+  "title": "Blog",
+  "subtitle": "Notes on product, building and curiosity. Placeholder posts — replace with yours.",
+  "posts": [
+    {
+      "slug": "hello-fellow-traveller",
+      "title": "Hello, fellow traveller",
+      "date": "2026-10-01",
+      "readingTime": "2 min read",
+      "tags": ["Intro"],
+      "excerpt": "Why I built this corner of the internet and what you can expect here.",
+      "body": [
+        "This is a placeholder post. Replace it with your first real piece of writing.",
+        "Each post is an entry in src/data/blog.json: add an object with a slug, title, date, tags, excerpt and a body array of paragraphs."
+      ]
+    },
+    {
+      "slug": "pm-who-builds",
+      "title": "What changes when a PM builds",
+      "date": "2026-10-10",
+      "readingTime": "4 min read",
+      "tags": ["Product", "Building"],
+      "excerpt": "Writing code changes how you scope, prioritise and talk to engineers.",
+      "body": [
+        "Placeholder post. Write about how building changes your product instincts.",
+        "Keep paragraphs short; each string in the body array renders as one paragraph."
+      ]
+    },
+    {
+      "slug": "magic-and-metrics",
+      "title": "Magic and metrics",
+      "date": "2026-10-20",
+      "readingTime": "3 min read",
+      "tags": ["Life", "Product"],
+      "excerpt": "What Harry Potter and Marvel taught me about stories, stakes and shipping.",
+      "body": [
+        "Placeholder post. Connect your interests to your product thinking here."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Product Journey",
+  "subtitle": "3.5+ years across product strategy, customer discovery, growth and delivery.",
+  "entries": [
+    {
+      "period": "Mar 2026 – Oct 2026",
+      "role": "Independent Product & GTM Consultant",
+      "org": "Early-Stage Tech & AI Products",
+      "location": null,
+      "highlights": [
+        "Led Shyne, a consumer wellness app, from 16 user interviews to a three-feature MVP and Play Store launch in ~4 months; reached ~160 downloads, 120 registrations and 100 onboarding completions.",
+        "Used Mixpanel feature-usage patterns and qualitative feedback to refine cycle-day flexibility and add manual mood journaling; advised two other early-stage AI products on segmentation, UX and validation."
+      ]
+    },
+    {
+      "period": "Jan 2025 – Feb 2026",
+      "role": "Product Manager — CRM, Payments & Revenue Systems",
+      "org": "QuantumLeap Learning Solutions Pvt. Ltd.",
+      "location": "Bengaluru",
+      "highlights": [
+        "Product ownership: Proposed the CRM, mapped cross-functional operations and independently owned V1 scope, feature decisions and trade-offs within approved budget and timeline. Prioritized ~25 requirements for 28 internal users.",
+        "Prioritization & execution: Deferred AI integration to protect cost and the 90-day V1 deadline; partnered with design and engineering on lead lifecycle, roles, attribution, payments and dashboards. Led UAT and rollout; retired spreadsheets within ~5 weeks.",
+        "Funnel analytics: Used SQL and funnel analysis to isolate booked-call no-shows; introduced qualification, pre-sales calls and automated reminders. Attendance improved from 65/100 to 92/100 booked calls across before/after periods (no control group).",
+        "Conversion & collections: Lead-to-sale conversion increased from 16% to 26% across observed monthly cohorts after CRM and follow-up changes. Defined credit pre-qualification, lender handoffs and repayment states; cash collected increased from ~35% to ~70% of contract value alongside financing and follow-up changes.",
+        "Financial workflows & AI: Specified GST/TDS-aware invoicing and finance handoffs, reducing turnaround from ~7 days to 1 day. Subsequently introduced OpenAI-assisted lead scoring and pre-call guidance using a 14-question intake and ~1,000 historical transcripts."
+      ]
+    },
+    {
+      "period": "Jan 2024 – Dec 2024",
+      "role": "Product Owner — 0 to 1 Product & Monetization",
+      "org": "QuantumLeap Learning Solutions Pvt. Ltd.",
+      "location": "Bengaluru",
+      "highlights": [
+        "Synthesized ~60 prospect conversations to identify a scope-price mismatch in an Rs.8–12L flagship; shaped a focused Rs.3L offer for smaller service businesses. Evaluated willingness to pay, alternatives and delivery costs; acquired ~30 paid pilots in 45 days and scaled to ~10 monthly sales (Rs.30L/month).",
+        "Selected an off-the-shelf LMS over a custom build to validate demand with limited engineering investment; considered segment fit and cannibalization when packaging the offer."
+      ]
+    },
+    {
+      "period": "Jan 2023 – Dec 2023",
+      "role": "Project Manager — Customer Discovery & Funnel Operations",
+      "org": "QuantumLeap Learning Solutions Pvt. Ltd.",
+      "location": "Bengaluru",
+      "highlights": [
+        "Coordinated customer purchase journeys and surfaced recurring objections, affordability constraints and decision friction that informed later CRM, qualification and monetization workflows."
+      ]
+    }
+  ]
+}

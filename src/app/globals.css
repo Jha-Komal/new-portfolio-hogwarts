@@ -1,0 +1,356 @@
+@import "tailwindcss";
+
+/* dark is the default; the hero scene opts back into it with .theme-dark */
+:root,
+.theme-dark {
+  color-scheme: dark;
+  --background: #05080c;
+  --foreground: #e6edf3;
+  --panel: #080d13;
+  --line: #243039;
+  --green: #3ddc97;
+  --amber: #f5c76b;
+  --blue: #5fb4ff;
+  --muted: #8b98a5;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --background: #eef1f5;
+  --foreground: #121a24;
+  --panel: #ffffff;
+  --line: #d3dae3;
+  --green: #0c7a50;
+  --amber: #9a5a00;
+  --blue: #1a5fb4;
+  --muted: #5d6a79;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-line: var(--line);
+  --color-green: var(--green);
+  --color-amber: var(--amber);
+  --color-sky: var(--blue);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-mono-body);
+  --font-mono: var(--font-mono-body);
+  --font-display: var(--font-mono-display);
+}
+
+/* a bit bigger than default, scaled with the viewport so each page keeps fitting one screen */
+html {
+  font-size: clamp(14px, min(2.25vh, 1.35vw), 19px);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono-body), ui-monospace, monospace;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ---- animated overlays on the pixel art (see PixelScene.tsx) ---- */
+
+.scene-lantern-glow,
+.scene-lantern-core,
+.scene-laptop-glow,
+.scene-laptop-screen {
+  position: absolute;
+}
+
+.scene-lantern-glow,
+.scene-lantern-core,
+.scene-laptop-glow {
+  mix-blend-mode: screen;
+}
+
+.scene-lantern-glow {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 190, 90, 0.5) 0%,
+    rgba(255, 150, 50, 0.2) 38%,
+    transparent 70%
+  );
+  animation: flicker 3.4s ease-in-out infinite;
+}
+
+.scene-lantern-core {
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 238, 180, 0.85) 0%,
+    rgba(255, 190, 80, 0.35) 55%,
+    transparent 80%
+  );
+  animation: flicker 2.6s ease-in-out infinite;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  18% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 0.55;
+  }
+  52% {
+    opacity: 0.95;
+  }
+  74% {
+    opacity: 0.65;
+  }
+}
+
+.scene-laptop-glow {
+  background: radial-gradient(
+    ellipse,
+    rgba(110, 220, 255, 0.3) 0%,
+    transparent 70%
+  );
+  animation: screen-pulse 4s ease-in-out infinite;
+}
+
+@keyframes screen-pulse {
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.scene-laptop-screen {
+  background: #061427;
+  overflow: hidden;
+}
+
+.scene-code-row {
+  position: absolute;
+  height: 7%;
+  width: 0;
+  background: #7fe3f0;
+  box-shadow: 0 0 4px rgba(127, 227, 240, 0.7);
+  animation: type 7s steps(10, end) infinite;
+}
+
+.scene-code-cursor::after {
+  content: "";
+  position: absolute;
+  right: -9px;
+  top: -20%;
+  width: 4px;
+  height: 140%;
+  background: #7fe3f0;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  45%,
+  90% {
+    width: var(--w);
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* day / night art */
+.scene-day {
+  display: none;
+}
+
+[data-theme="light"] .scene-day {
+  display: block;
+}
+
+[data-theme="light"] .scene-night {
+  display: none;
+}
+
+/* keep the hero copy readable where it crosses the day art */
+[data-theme="light"] .hero-copy {
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.95),
+    0 0 18px rgba(255, 255, 255, 0.85);
+}
+
+/* lanterns are off in daylight */
+[data-theme="light"] .scene-lantern-glow,
+[data-theme="light"] .scene-lantern-core,
+[data-theme="light"] .scene-laptop-glow {
+  display: none;
+}
+
+.scene-sprite {
+  position: absolute;
+  inset: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}
+
+/* steam: wisps rise, sway and fade; three copies out of phase */
+.scene-steam {
+  inset: auto;
+  transform-origin: 50% 100%;
+  animation: steam-rise 4.5s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes steam-rise {
+  0% {
+    opacity: 0;
+    transform: translate(0, 12%) scale(0.85, 0.7);
+  }
+  15% {
+    opacity: 0.95;
+  }
+  45% {
+    transform: translate(9%, -18%) scale(1, 1);
+  }
+  70% {
+    opacity: 0.55;
+    transform: translate(-6%, -42%) scale(1.08, 1.12);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(5%, -75%) scale(1.15, 1.3);
+  }
+}
+
+/* owl: drifts across the sky; wings flap around the shoulders; body bobs */
+.scene-owl {
+  position: absolute;
+  animation: owl-fly 18s ease-in-out infinite;
+}
+
+.scene-owl-bob {
+  position: absolute;
+  inset: 0;
+  animation: owl-bob 0.9s ease-in-out infinite;
+}
+
+.scene-owl-wing-l {
+  clip-path: inset(0 50.6% 0 0);
+  transform-origin: 47% 56%;
+  animation: flap-l 0.9s ease-in-out infinite;
+}
+
+.scene-owl-wing-r {
+  clip-path: inset(0 0 0 60.5%);
+  transform-origin: 64% 56%;
+  animation: flap-r 0.9s ease-in-out infinite;
+}
+
+.scene-owl-body {
+  clip-path: inset(0 31% 0 42%);
+}
+
+@keyframes flap-l {
+  0%,
+  100% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes flap-r {
+  0%,
+  100% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes owl-bob {
+  0%,
+  100% {
+    transform: translateY(3%);
+  }
+  50% {
+    transform: translateY(-4%);
+  }
+}
+
+@keyframes owl-fly {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-55%, -14%) rotate(-3deg);
+  }
+  50% {
+    transform: translate(-105%, 6%) rotate(0deg);
+  }
+  75% {
+    transform: translate(-45%, 14%) rotate(3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-steam {
+    opacity: 0.8;
+    transform: none;
+  }
+
+  .scene-owl,
+  .scene-owl-bob,
+  .scene-owl-wing-l,
+  .scene-owl-wing-r {
+    animation: none;
+    transform: none;
+  }
+
+  .cursor-blink,
+  .float,
+  .scene-lantern-glow,
+  .scene-lantern-core,
+  .scene-laptop-glow,
+  .scene-code-row,
+  .scene-code-cursor::after {
+    animation: none;
+  }
+
+  .scene-code-row {
+    width: var(--w);
+  }
+}

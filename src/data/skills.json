@@ -1,0 +1,65 @@
+{
+  "highlights": [
+    { "label": "Product Thinking", "icon": ">_", "tone": "green" },
+    { "label": "User Research", "icon": "◍", "tone": "sky" },
+    { "label": "0→1 Building", "icon": "</>", "tone": "sky" },
+    { "label": "Always Curious", "icon": "💡", "tone": "amber" },
+    { "label": "SQL", "icon": "DB", "tone": "sky" },
+    { "label": "Mixpanel", "icon": "📈", "tone": "green" },
+    { "label": "Jira", "icon": "J", "tone": "sky" },
+    { "label": "Notion", "icon": "N", "tone": "muted" },
+    { "label": "Figma", "icon": "❖", "tone": "figma" },
+    { "label": "More...", "icon": "+", "tone": "muted" }
+  ],
+  "groups": [
+    {
+      "category": "Product",
+      "items": [
+        "Roadmap & Vision",
+        "PRD & User Story Writing",
+        "Backlog Prioritization",
+        "Product Lifecycle",
+        "0→1 Development",
+        "MVP Prioritization",
+        "User Research",
+        "Agile/Scrum",
+        "Sprint Planning"
+      ]
+    },
+    {
+      "category": "Analytics",
+      "items": [
+        "Funnel & Cohort Analysis",
+        "Customer Journey Mapping",
+        "KPI Tracking",
+        "Hypothesis Testing",
+        "Market & Competitor Analysis"
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        "Jira",
+        "Confluence",
+        "Figma",
+        "Balsamiq",
+        "Google Analytics",
+        "Mixpanel",
+        "Zoho CRM",
+        "LeadSquared",
+        "SQL",
+        "Excel",
+        "Notion"
+      ]
+    },
+    {
+      "category": "Soft Skills",
+      "items": [
+        "Cross-functional Collaboration",
+        "Stakeholder Management",
+        "People Management",
+        "Structured Problem-Solving"
+      ]
+    }
+  ]
+}

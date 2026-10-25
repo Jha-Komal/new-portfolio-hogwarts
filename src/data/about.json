@@ -1,0 +1,31 @@
+{
+  "title": "About Me",
+  "subtitle": "Product manager turning customer insights into measurable product outcomes.",
+  "story": [
+    "I like to start where a problem actually lives: in customer conversations, in the funnel, and in the small frictions people have stopped noticing. Over three and a half years I've taken products from the first interview to the first release, and I care as much about what we choose not to build as what we ship.",
+    "At QuantumLeap I proposed and scoped an internal CRM, held back AI features to protect a 90-day deadline, and then watched the numbers: booked-call attendance rose from 65 to 92 in a hundred, and lead-to-sale conversion from 16% to 26%, alongside the changes we made. Before that, about sixty prospect conversations revealed a pricing mismatch, and a smaller, sharper offer became thirty paid pilots in forty-five days.",
+    "More recently I've been building on my own: taking Shyne, a women's wellness app, from sixteen user interviews to a Play Store launch in about four months, and writing honest case studies on products I use every day. I do my best work with clear trade-offs, small pieces of real evidence, and teammates who would rather talk it through."
+  ],
+  "principles": [
+    {
+      "title": "Start with people",
+      "blurb": "Interviews and funnels first, features second. The problem usually looks different up close."
+    },
+    {
+      "title": "Be honest about the evidence",
+      "blurb": "I say what I know, what I'm guessing, and what hasn't been measured yet."
+    },
+    {
+      "title": "Protect the deadline",
+      "blurb": "Scope is a decision. I defer what can wait so the first release is one people can use."
+    },
+    {
+      "title": "Measure what matters",
+      "blurb": "Pick a north-star, then set guardrails so a win in one place doesn't cost trust somewhere else."
+    }
+  ],
+  "education": [
+    { "title": "B.A. (Hons.), English", "detail": "M.N.D. College · 2019–2022" },
+    { "title": "NextLeap Product Management Fellowship", "detail": "Apr 2026 – Sep 2026" }
+  ]
+}

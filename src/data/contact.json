@@ -1,0 +1,9 @@
+{
+  "title": "Contact",
+  "subtitle": "Got a problem worth solving, or just want to say hi? Send an owl.",
+  "availability": "Open to interesting conversations.",
+  "links": [
+    { "label": "LinkedIn", "handle": "/in/komal-kumari-065440234", "href": "https://www.linkedin.com/in/komal-kumari-065440234/" },
+    { "label": "GitHub", "handle": "@Jha-Komal", "href": "https://github.com/Jha-Komal" }
+  ]
+}

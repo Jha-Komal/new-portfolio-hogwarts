@@ -1,0 +1,27 @@
+{
+  "title": "The Workshop",
+  "subtitle": "Things I build and write on my own time.",
+  "items": [
+    {
+      "title": "Shyne",
+      "blurb": "A women's wellness app taken from 16 user interviews to a Play Store launch in about four months: ~160 downloads, 120 registrations, 100 onboarding completions.",
+      "status": "shipped",
+      "emoji": "🌸",
+      "tags": ["0→1", "Mixpanel", "User Research"]
+    },
+    {
+      "title": "Product Case Studies",
+      "blurb": "Honest write-ups of products I use every day, with the evidence and its limits stated plainly.",
+      "status": "building",
+      "emoji": "📝",
+      "tags": ["Discovery", "Metrics", "AI-Native"]
+    },
+    {
+      "title": "This Portfolio",
+      "blurb": "A pixel-art, terminal-flavoured home on the internet.",
+      "status": "shipped",
+      "emoji": "🏰",
+      "tags": ["Next.js", "Tailwind", "TypeScript"]
+    }
+  ]
+}

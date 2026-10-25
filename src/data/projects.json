@@ -1,0 +1,113 @@
+[
+  {
+    "slug": "google-photos-memory-trail",
+    "title": "Google Photos: Memory Trail",
+    "subtitle": "Product Discovery · AI-Native MVP",
+    "blurb": "Analysed 10,641 public documents, 31 survey responses and six interviews to design an AI-assisted recovery flow for failed photo searches.",
+    "overview": "Users often remember a moment but not its date, place or details, and stall when the first search fails. Using public-review analysis, a 31-response survey, six task-based interviews and live retrieval replays, I framed the core problem as recovery after a failed first search, then designed Memory Trail: an AI-native concept that keeps clues and near-matches so users narrow results without starting over. In a three-user seeded test, all three recovered their target after the first attempt failed; this is directional evidence, not proof of improved retrieval in real libraries.",
+    "role": "Independent case study",
+    "year": "2026",
+    "tags": ["Product Discovery", "User Research", "AI-Native MVP", "Search & Discovery"],
+    "highlights": [
+      "10,641 public documents analysed for retrieval-friction patterns",
+      "31 survey responses and six task-based interviews",
+      "3/3 users recovered their target in a seeded test (directional evidence only)"
+    ],
+    "image": {
+      "src": "/images/projects/google-photos-main.png",
+      "width": 1358,
+      "height": 753,
+      "alt": "Memory Trail overview: five steps from starting a search to confirming the photo, with the mechanism behind the MVP"
+    },
+    "subImage": {
+      "src": "/images/projects/google-photos-sub.png",
+      "width": 144,
+      "height": 301,
+      "alt": "Memory Trail results screen on a phone"
+    },
+    "gradient": ["#5fb4ff", "#2c7a8c", "#2a6b3f"],
+    "featured": true
+  },
+  {
+    "slug": "blinkit-category-discovery",
+    "title": "Blinkit: Contextual Category Discovery",
+    "subtitle": "Product Strategy · Growth & Experimentation",
+    "blurb": "Analysed 3,098+ customer conversations and proposed a contextual add-on to nudge shoppers into new categories without slowing checkout.",
+    "overview": "Frequent Blinkit shoppers keep buying the same familiar items and rarely explore new categories. I studied the existing discovery surfaces and the friction behind repeat-purchase behaviour, then proposed an AI-powered contextual add-on: it infers the shopper's likely mission from their basket, recommends one relevant item with a clear reason, and lets them accept or ignore it without slowing checkout. The success framework pairs a north-star metric (share of eligible checkouts where a new-category item is bought) with guardrails on checkout time, cart abandonment and relevance.",
+    "role": "Independent case study",
+    "year": "2026",
+    "tags": ["Product Strategy", "Quick Commerce", "Growth & Experimentation", "AI Recommendations"],
+    "highlights": [
+      "3,098+ customer conversations analysed; initial hypothesis revised toward contextual discovery",
+      "North-star: share of eligible checkouts where a new-category item is bought",
+      "Guardrails on checkout time, cart abandonment and relevance"
+    ],
+    "image": {
+      "src": "/images/projects/blinkit-main.png",
+      "width": 1357,
+      "height": 759,
+      "alt": "AI-powered contextual add-on for Blinkit: core workflow, key highlights and MVP principle"
+    },
+    "subImage": {
+      "src": "/images/projects/blinkit-sub.png",
+      "width": 138,
+      "height": 256,
+      "alt": "Blinkit checkout screen with a single suggested add-on"
+    },
+    "gradient": ["#3a1f6e", "#2a1650", "#14102e"],
+    "featured": true
+  },
+  {
+    "slug": "myntra-wishlist",
+    "title": "Myntra: Wishlist Conversion",
+    "subtitle": "Product Discovery · AI-Powered Product Development",
+    "blurb": "Analysed 2,055 public conversations, 20 survey responses and six interviews to design a Wishlist comparison flow called Help Me Choose.",
+    "overview": "High-intent Myntra shoppers save several products for one need, then stall because the comparison is spread across product pages. I combined an AI analysis of 2,055 public conversations with a 20-person survey and 6 interviews to find the root cause, then proposed Help Me Choose: a Wishlist workspace that resolves a 2–4 item shortlist around the shopper's own priorities, with no discounts. The case study covers prioritization, a metrics hierarchy with guardrails, and an experiment plan; no results are claimed.",
+    "role": "Independent case study",
+    "year": "2026",
+    "tags": ["Product Discovery", "User Research", "AI-Powered", "Metrics & Experimentation"],
+    "highlights": [
+      "2,055 public conversations analysed, plus a 20-person survey and 6 interviews",
+      "Purchase-conversion, decision-speed and quality guardrails defined",
+      "Experiment plan included; no results are claimed"
+    ],
+    "image": {
+      "src": "/images/projects/myntra-main.png",
+      "width": 1363,
+      "height": 762,
+      "alt": "Help Me Choose overview: shortlist, diagnose, resolve and act, with the research behind it"
+    },
+    "subImage": {
+      "src": "/images/projects/myntra-sub.png",
+      "width": 190,
+      "height": 382,
+      "alt": "Help Me Choose screen with purchase context and priorities"
+    },
+    "gradient": ["#3b4f8a", "#26355e", "#141c33"],
+    "featured": true
+  },
+  {
+    "slug": "subspace-teardown",
+    "title": "Subspace.money",
+    "subtitle": "Product Teardown · May 2026",
+    "blurb": "End-to-end teardown of a consumer fintech app: onboarding, payment UX and post-transaction trust failures.",
+    "overview": "End-to-end teardown of a consumer fintech app — analysed onboarding flow, payment UX, and post-transaction trust failures across the full user journey. Diagnosed UX trust breakdown (blank post-payment screen, unlabelled wallet deduction) and recommended tiered fixes prioritized by sprint capacity before GTM.",
+    "role": "Independent teardown",
+    "year": "2026",
+    "tags": ["Product Teardown", "Fintech", "UX Audit"],
+    "highlights": [
+      "Full user journey audited: onboarding, payment UX, post-transaction states",
+      "Trust breakdown found: blank post-payment screen and unlabelled wallet deduction",
+      "Fixes tiered by sprint capacity before GTM"
+    ],
+    "image": {
+      "src": "/images/projects/subspace-main.png",
+      "width": 1913,
+      "height": 971,
+      "alt": "Subspace.money app home screen showing gift card categories and trending subscriptions"
+    },
+    "subImage": null,
+    "gradient": ["#7a3f1f", "#a85a2e", "#3a1f2e"],
+    "featured": false
+  }
+]

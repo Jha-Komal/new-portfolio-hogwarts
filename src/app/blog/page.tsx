@@ -1,0 +1,39 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Page from "@/components/Page";
+import PageHeader from "@/components/PageHeader";
+import Tag from "@/components/Tag";
+import blog from "@/data/blog.json";
+
+export const metadata: Metadata = { title: blog.title };
+
+export default function BlogPage() {
+  return (
+    <Page scroll>
+      <PageHeader command="ls ./blog" title={blog.title} subtitle={blog.subtitle} />
+      <ul className="space-y-3">
+        {blog.posts.map((post) => (
+          <li key={post.slug}>
+            <Link
+              href={`/blog/${post.slug}`}
+              className="group block rounded-lg border border-line bg-panel p-5 transition-colors hover:border-green/60"
+            >
+              <p className="text-xs text-muted">
+                {post.date} · {post.readingTime}
+              </p>
+              <h2 className="mt-1 text-lg text-amber">{post.title}</h2>
+              <p className="mt-2 text-sm text-foreground/80">{post.excerpt}</p>
+              <ul className="mt-3 flex flex-wrap gap-1.5">
+                {post.tags.map((t) => (
+                  <li key={t}>
+                    <Tag>{t}</Tag>
+                  </li>
+                ))}
+              </ul>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Page>
+  );
+}

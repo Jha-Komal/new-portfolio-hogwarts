@@ -1,0 +1,34 @@
+{
+  "title": "Life",
+  "subtitle": "Beyond the roadmap — the things that keep me curious.",
+  "entries": [
+    {
+      "title": "Harry Potter",
+      "category": "Reading",
+      "blurb": "Placeholder — add details later.",
+      "emoji": "⚡",
+      "image": null
+    },
+    {
+      "title": "Marvel",
+      "category": "Watching",
+      "blurb": "Placeholder — add details later.",
+      "emoji": "🛡️",
+      "image": null
+    },
+    {
+      "title": "Travel",
+      "category": "Exploring",
+      "blurb": "Placeholder — add details later.",
+      "emoji": "🧭",
+      "image": null
+    },
+    {
+      "title": "Cats & Coffee",
+      "category": "Daily ritual",
+      "blurb": "Placeholder — add details later.",
+      "emoji": "☕",
+      "image": null
+    }
+  ]
+}
